@@ -15,6 +15,17 @@
         <div id="funFact">
             <p>{{ funFact }}</p>
         </div>
+		<div id="anotherFunFact">
+			<p>{{ anotherFunFact }}</p>
+		</div>
+		
+		 <form action="/showFact1">
+          <select name="county"> <!-- add onchange="this.form.submit()" to submit/update the form when an option is selected.  Usefull for then displaying county options. -->
+            {{ county_options }}
+          </select>
+          <br><br>
+          <input type="submit" value="Get a county fact!">
+        </form>
 
     </body>
 </html>
